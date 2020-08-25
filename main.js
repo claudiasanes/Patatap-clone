@@ -16,8 +16,8 @@ function onKeyDown(event) {
 
 function onFrame(event) {
   for (var i = 0; i < circles.length; i++) {
-    circles[i].fillColor.hue++;
-    circles[i].scale(0.9);
+    circles[i].fillColor.hue += 3;
+    circles[i].scale(0.94);
     if (circles[i].area < 1) {
       circles[i].remove();
       circles.splice(i, 1);
